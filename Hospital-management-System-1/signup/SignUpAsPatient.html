@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medical Care Hospital</title>
+    <meta name="keywords" content="Medical Care" />
+    <meta name="description" content="Team Project" />
+    <style>
+       .aa {
+        width: 650px;
+        height: 1000px;
+        color:black;
+      }
+      table{
+        width:90%;
+        height:90%;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- <img src="../assets/Images/logo.png" class="logo" /> -->
+    <div id="nav-placeholder"></div>
+    <div class="aa" style="border:2px solid black">
+      <form method="post" action="SignUpAsPatient.php">
+        <h1 style="color: green">SIGN UP As Patient</h1>
+
+        <table>
+          <tr>
+            <td><label>ENTER YOUR NAME : </label></td>
+            <td><input
+              type="text"
+              name="name"
+              placeholder="Please Enter Your Name...."
+            /></td>
+          </tr>
+          <tr>
+            <td><label>DOB : </label></td>
+            <td><input
+              type="date"
+              name="dob"
+              placeholder="Please Enter Your Date Of Birth...."
+            /></td>
+          </tr>
+          <tr>
+            <td><label>ENTER YOUR EMAIL : </label></td>
+            <td><input
+              type="email"
+              name="mail"
+              placeholder="Please Enter Your Mail Id...."
+            /></td>
+          </tr>
+          <tr>
+            <td><label>ENTER UNSERNAME : </label></td>
+            <td><input
+              type="text"
+              name="uname"
+              placeholder="Please Enter Username...."
+              required
+            /></td>
+          </tr>
+          <tr>
+            <td><label>ENTER PASSWORD : </label></td>
+            <td><input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Please Enter Password...."
+            /></td>
+          </tr>
+          <tr>
+            <td><label>RE-ENTER PASSWORD : </label></td>
+            <td> <input
+              type="password"
+              name="repass"
+              id="rpass"
+              placeholder="Please Re Enter Password...."
+            /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input
+              type="submit"
+              value="SIGN UP"
+              onclick="pass()"
+              name="submit"
+              style="background-color: green; margin-left: 25%;"
+            /></td>
+          </tr>
+        </table>
+        <p style="font-size: 13px">
+          Already a User then,Click <a href="../login/LoginAsPatient.html">here</a> to
+          log in.
+        </p>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
